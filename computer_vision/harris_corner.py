@@ -67,5 +67,6 @@ class HarrisCorner:
 
 if __name__ == "__main__":
     edge_detect = HarrisCorner(0.04, 3)
-    color_img, _ = edge_detect.detect("path_to_image")
-    cv2.imwrite("detect.png", color_img)
+    color_img, _ = edge_detect.detect(r"C:\Users\chuqu\OneDrive\Pictures\cut2.jpg")
+    cv2.imshow("detect.png", color_img)
+    cv2.waitKey(0)

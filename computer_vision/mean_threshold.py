@@ -24,7 +24,6 @@ def mean_threshold(image: Image) -> Image:
             pixels[i, j] = 255 if pixels[i, j] > mean else 0
     return image
 
-
 if __name__ == "__main__":
-    image = mean_threshold(Image.open("path_to_image").convert("L"))
-    image.save("output_image_path")
+    image = mean_threshold(Image.open(r"C:\Users\chuqu\OneDrive\Pictures\QR_area.png").convert("L"))
+    image.save(r"C:\Users\chuqu\OneDrive\Pictures\cut2_byte.jpg")
